@@ -52,12 +52,12 @@ const light = new THREE.DirectionalLight(0xffffff, 1);
 scene.add(light);
 light.position.set(1, 1, 1).normalize();
 scene.add(cube);
-cube.position.set(0, 0, -1);
+cube.position.set(0.3, 0.5, -1);
 
 function animate() {
   renderer.setAnimationLoop(() => {
     cube.rotation.y += 0.01;
-    renderer.render(scene, camera);
+    renderer.render(scene, camera, light);
   });
 }
 animate();
