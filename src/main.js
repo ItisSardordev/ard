@@ -43,7 +43,7 @@ if (renderer.domElement) {
 }
 
 // Добавляем 3D-объект
-const geometry = new THREE.BoxGeometry(0.1, 0.1, 0.1);
+const geometry = new THREE.BoxGeometry(0.8, 0.8, 0.8);
 const material = new THREE.MeshBasicMaterial({ color: 0x44aa88 });
 const cube = new THREE.Mesh(geometry, material);
 scene.add(camera);
