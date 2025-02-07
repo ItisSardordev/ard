@@ -49,8 +49,8 @@ const cube = new THREE.Mesh(geometry, material);
 scene.add(camera);
 camera.position.set(0, 1.6, 3);
 const light = new THREE.DirectionalLight(0xffffff, 1);
-light.position.set(1, 1, 1).normalize();
 scene.add(light);
+light.position.set(1, 1, 1).normalize();
 scene.add(cube);
 cube.position.set(4, 5, -1);
 
