@@ -18,7 +18,6 @@ document.body.appendChild(
   ARButton.createButton(renderer, { requiredFeatures: ["hit-test"] })
 );
 
-
 if (button) {
   document.body.appendChild(button);
 } else {
@@ -43,18 +42,17 @@ if (renderer.domElement) {
   console.error("Ошибка: renderer.domElement отсутствует");
 }
 
-
 // Добавляем 3D-объект
 const geometry = new THREE.BoxGeometry(0.1, 0.1, 0.1);
 const material = new THREE.MeshBasicMaterial({ color: 0x44aa88 });
 const cube = new THREE.Mesh(geometry, material);
 scene.add(camera);
-camera.position.set(0, 1.6, 3); 
+camera.position.set(0, 1.6, 3);
 const light = new THREE.DirectionalLight(0xffffff, 1);
 light.position.set(1, 1, 1).normalize();
 scene.add(light);
 scene.add(cube);
-cube.position.set(0, 0, -1); 
+cube.position.set(4, 5, -1);
 
 function animate() {
   renderer.setAnimationLoop(() => {
