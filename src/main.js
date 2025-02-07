@@ -52,7 +52,7 @@ const light = new THREE.DirectionalLight(0xffffff, 1);
 scene.add(light);
 light.position.set(1, 1, 1).normalize();
 scene.add(cube);
-cube.position.set(4, 5, -1);
+cube.position.set(0, 0, -1);
 
 function animate() {
   renderer.setAnimationLoop(() => {
