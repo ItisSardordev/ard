@@ -15,8 +15,6 @@ document.body.appendChild(renderer.domElement);
 
 // Добавляем кнопку запуска AR
 document.body.appendChild(ARButton.createButton(renderer));
-const button = ARButton.createButton(renderer);
-document.body.appendChild(button);
 
 if (button) {
   document.body.appendChild(button);
